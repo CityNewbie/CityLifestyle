@@ -19,7 +19,7 @@ var text = [
   link,
   '\n',
   'Thanks,',
-  'The Team'
+  'The City Lifestyle Team'
 ].join('\n');
 
 mg.loadModels();

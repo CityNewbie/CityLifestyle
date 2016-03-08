@@ -10,7 +10,7 @@ module.exports = {
   // Binding to 127.0.0.1 is safer in production.
   host: process.env.HOST || '0.0.0.0',
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
+    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',//n3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev','mongodb://meanapp:meanapp@ds027749.mongolab.com:27749/cen3031-fall-test/mean-dev',
     options: {
       user: '',
       pass: ''
@@ -69,15 +69,15 @@ module.exports = {
     sandbox: false
   },
   mailer: {
-    from: process.env.MAILER_FROM || 'MAILER_FROM',
-    options: {
-      service: process.env.MAILER_SERVICE_PROVIDER || 'MAILER_SERVICE_PROVIDER',
-      auth: {
-        user: process.env.MAILER_EMAIL_ID || 'MAILER_EMAIL_ID',
-        pass: process.env.MAILER_PASSWORD || 'MAILER_PASSWORD'
-      }
-    }
-  },
+   from:'City Lifestyle Password Reset',
+   options: {
+     service:'gmail',
+     auth: {
+       user:'citylifestyle2016@gmail.com',
+       pass:'kjWcodJh2LOu'
+     }
+   }
+ },
   seedDB: {
     seed: process.env.MONGO_SEED === 'true' ? true : false,
     options: {
