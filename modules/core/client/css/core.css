@@ -41,3 +41,327 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
+
+html {
+  background:#0175CA url(../img/nycView.JPG) no-repeat center center fixed;
+  min-height:100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+body {
+  background:transparent;
+  min-height:100%;  
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.5em;
+  font-size:14px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fefefe !important;
+  font-weight: normal;
+}
+
+/* Used to make the Edit inputs initially invisible. */
+#hide {
+  display:none;
+}
+
+/** Navbar **/
+
+.navbar-inverse {
+  background-image: none;
+  background-color: #1e5f8c;
+  border-bottom: 3px solid #144978;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+  color: #fefefe !important;
+  text-shadow: none !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-image: none !important;
+  background-color: #2c8ab8 !important;
+  box-shadow: none !important;
+}
+
+/** Button Styling **/
+
+#home-con a.start-test {
+  display: block;
+  width: 360px;
+  background-image: none;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  padding: 18px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+#home-con a.start-test:hover, #home-con a.start-test:active {
+  background-color: #3498db;
+}
+.section { 
+  z-index: 1;
+  min-height:420px;
+  width: 100%; 
+  overflow:hidden !important;
+  height:100%;
+  padding-top:100px;
+  padding-bottom:50px; 
+  display:none;
+  top:0;
+} 
+@media (min-width: 768px) {
+  .section { padding-top:60px;}
+}
+
+/* Show one of sections */
+#head { 
+  display: block;
+}
+
+
+/********************************************************/
+/*                      Typography                      */
+/********************************************************/
+a { color:#fff; text-decoration: none; }
+a:hover, a:active { color:#fff; text-decoration: underline; }
+.lead { 
+  font-weight:normal;
+  font-size:1.5em;
+  line-height:1.2em;
+}
+
+.title,
+.subtitle { 
+  font-family: 'Wire One', Helvetica, Arial, sans-serif !important;
+  font-weight:bold;
+  font-size:7em;
+  margin-bottom:15px; 
+  color: #fff !important; 
+  line-height:1em;
+}
+.subtitle { 
+  line-height:.9em;
+  font-size:5.5em;
+  font-weight: bold;
+  margin-top:0;
+  margin-bottom:40px; 
+  color: #fff !important; 
+}
+.tagline { 
+  font-size:1.4em;
+  font-weight: bold;
+  line-height:1.3em;
+  margin-bottom:60px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #fff !important; 
+}
+
+@media (max-width: 767px) {
+  .lead { 
+    font-size:1.3em;
+  }
+}
+
+
+/********************************************************/
+/*                   UI - Buttons                       */
+/********************************************************/
+.btn{
+  color:#333;
+  text-shadow: none;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border:0 none;
+}
+.btn:hover {
+  color:#000;
+}
+.btn-lg { 
+  padding:16px 30px;
+  font-size:inherit;
+}
+
+.btn-link {
+  color:rgb(255, 255, 255);
+  color:rgba(255,255,255,.8);
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+  color:#fff
+}
+.btn-default {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.5);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.8);
+}
+.btn-primary {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.2);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,.5);
+}
+
+
+
+/********************************************************/
+/*                 UI - Thumbnails                      */
+/********************************************************/
+.thumbnail {
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,.2);
+  border: 0 none;
+  padding:10px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
+.thumbnail .caption {
+  color: inherit;
+}
+
+
+
+/********************************************************/
+/*                 Everything else                      */
+/********************************************************/
+
+.list-social .btn { 
+  font-size:1.3em; 
+}
+.list-social .btn:hover, .list-social .btn:active, .list-social .btn:focus { 
+  text-decoration: none; 
+}
+
+
+/* Social buttons in the footer */
+#social { 
+  margin-top:50px;
+  margin-bottom:50px;
+}
+#social .wrapper { 
+  width:340px; 
+  margin:0 auto;
+}
+
+/***********************************************************/
+/*                   Theme: text shadows                   */
+/***********************************************************/
+.text-shadows {   
+  text-shadow:0 1px 2px rgba(0,0,0,.2);
+}
+.text-shadows .title,
+.text-shadows .subtitle,
+.text-shadows .tagline { 
+  text-shadow:0 2px 3px rgba(0,0,0,.4);
+}
+.text-shadows .mainmenu .dropdown-menu a { 
+  text-shadow:0 2px 1px rgba(0,0,0,.2);
+}
+.text-shadows .mainmenu .dropdown-menu a:hover { 
+  text-shadow:none;
+}
+
+
+
+/***********************************************************/
+/*                   Inverted theme                        */
+/***********************************************************/
+.theme-invert {   
+  color:#222;
+ }
+.theme-invert a { 
+  color:#000;
+}
+.theme-invert .btn {
+  color:rgb(255,255,255);
+  color:rgba(255,255,255,.8);
+}
+.theme-invert .btn:hover {
+  color:#fff;
+}
+.theme-invert .btn-link {
+  color:rgb(0,0,0);
+  color:rgba(0,0,0,.8);
+}
+.theme-invert .btn-link:hover, .theme-invert .btn-link:focus, .theme-invert .btn-link:active {
+  color:#000
+}
+.theme-invert .navbar-toggle {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.12);
+}
+.theme-invert .navbar-toggle .icon-bar {
+  background: #333;
+}
+.theme-invert .mainmenu .dropdown-menu a { 
+  color:#000;
+}
+.theme-invert .mainmenu .dropdown-menu a:hover { 
+  background:rgb(0,0,0);
+  background:rgba(0,0,0,.1);
+  color:#000;
+}
+
+.theme-invert .title,
+.theme-invert .subtitle,
+.theme-invert .tagline { 
+  color:#222222; 
+}
+
+.theme-invert .btn-default {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.4);
+}
+.theme-invert .btn-default:hover,
+.theme-invert .btn-default:focus,
+.theme-invert .btn-default:active,
+.theme-invert .btn-default.active {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.6);
+  color:#fff;
+}
+.theme-invert .btn-primary {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.2);
+}
+.theme-invert .btn-primary:hover,
+.theme-invert .btn-primary:focus,
+.theme-invert .btn-primary:active,
+.theme-invert .btn-primary.active {
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,.3);
+  color:#fff;
+}
+
+.theme-invert .thumbnail {
+  background-color: rgb(0,0,0);
+  background-color: rgba(255,255,255,.8);
+}
+.thumbnail .caption {
+  color: inherit;
+}
+
