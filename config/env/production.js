@@ -69,15 +69,15 @@ module.exports = {
     sandbox: false
   },
   mailer: {
-   from:'City Lifestyle Password Reset',
-   options: {
-     service:'gmail',
-     auth: {
+    from:'City Lifestyle Password Reset',
+    options: {
+      service:'gmail',
+      auth: {
        user:'citylifestyle2016@gmail.com',
        pass:'kjWcodJh2LOu'
      }
-   }
- },
+    }
+  },
   seedDB: {
     seed: process.env.MONGO_SEED === 'true' ? true : false,
     options: {

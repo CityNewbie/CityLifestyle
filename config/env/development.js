@@ -65,16 +65,16 @@ module.exports = {
     callbackURL: '/api/auth/paypal/callback',
     sandbox: true
   },
-   mailer: {
-   from:'City Lifestyle Password Reset',
-   options: {
-     service:'gmail',
-     auth: {
-       user:'citylifestyle2016@gmail.com',
-       pass:'kjWcodJh2LOu'
-     }
-   }
- },
+  mailer: {
+    from:'City Lifestyle Password Reset',
+    options: {
+      service:'gmail',
+      auth: {
+        user:'citylifestyle2016@gmail.com',
+        pass:'kjWcodJh2LOu'
+      }
+    }
+  },
   livereload: true,
   seedDB: {
     seed: process.env.MONGO_SEED === 'true' ? true : false,
