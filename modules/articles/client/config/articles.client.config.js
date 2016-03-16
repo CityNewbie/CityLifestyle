@@ -9,23 +9,29 @@
 
   function menuConfig(Menus) {
     Menus.addMenuItem('topbar', {
-      title: 'Articles',
-      state: 'articles',
-      type: 'dropdown',
+      title: 'Events',
+      state: 'articles.list',
       roles: ['*']
     });
 
-    // Add the dropdown list item
-    Menus.addSubMenuItem('topbar', 'articles', {
-      title: 'List Articles',
-      state: 'articles.list'
-    });
-
-    // Add the dropdown create item
-    Menus.addSubMenuItem('topbar', 'articles', {
-      title: 'Create Article',
+    Menus.addMenuItem('topbar', {
+      title: 'Create an Event',
       state: 'articles.create',
       roles: ['user']
     });
+
+
+    // Add the dropdown list item
+   // Menus.addSubMenuItem('topbar', 'articles', {
+     // title: 'List of Events',
+      //state: 'articles.list'
+    //});
+
+    // Add the dropdown create item
+    //Menus.addSubMenuItem('topbar', 'articles', {
+      //title: 'Create Event',
+      //state: 'articles.create',
+      //roles: ['user']
+    //});
   }
 })();
