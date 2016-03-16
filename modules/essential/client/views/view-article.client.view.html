@@ -1,0 +1,31 @@
+<section>
+  <div class="page-header">
+    <h1 ng-bind="vm.article.title"></h1>
+  </div>
+  <div class="pull-right" ng-show="vm.article.isCurrentUserOwner">
+    <a class="btn btn-primary" ui-sref="articles.edit({ articleId: vm.article._id })">
+      <i class="glyphicon glyphicon-edit"></i>
+    </a>
+    <a class="btn btn-primary" ng-click="vm.remove()">
+      <i class="glyphicon glyphicon-trash"></i>
+    </a>
+  </div>
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.article.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.article.user" ng-bind="vm.article.user.displayName"></span>
+      <span ng-if="!vm.article.user">Deleted User</span>
+    </em>
+  </small>
+  <p class="lead" ng-bind="vm.article.content"></p>
+  <div class="row">
+   <div class="col-sm-10 col-md-10"> 
+    <iframe src="https://www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK
+        &zoom=17
+        &key=AIzaSyCAHmMha2mevB0SLPRPBht7cbgurIYUCL0">
+    </iframe>
+  </div>
+</div>
+</section>
