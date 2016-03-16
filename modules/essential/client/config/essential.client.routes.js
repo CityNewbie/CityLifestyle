@@ -8,9 +8,7 @@ angular.module('essential').config(['$stateProvider',
       .state('essential', {
         url: '/essential',
         templateUrl: 'modules/essential/client/views/essential.client.view.html',
-        data: {
-          roles: ['user', 'admin']
-        }
+        
       });
   }
 ]);
