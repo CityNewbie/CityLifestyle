@@ -17,7 +17,7 @@
     Menus.addMenuItem('topbar', {
       title: 'Create an Event',
       state: 'articles.create',
-      roles: ['user']
+      roles: ['admin']
     });
 
 

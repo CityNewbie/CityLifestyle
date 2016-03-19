@@ -10,7 +10,7 @@
   function MenuConfig(Menus) {
 
     Menus.addMenu('account', {
-      roles: ['user']
+      roles: ['user' , 'admin']
     });
 
     Menus.addMenuItem('account', {
