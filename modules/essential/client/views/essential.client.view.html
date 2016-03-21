@@ -2,7 +2,111 @@
   <div class="page-header">
     <h1>Essential Lifestyle Places</h1>
   </div>
+
   <div class="row">
-</div>
+  	<div class="col-sm-10">
+  		<h2>Gainesville Regional Utilities</h2>
+  		<div class = "col-sm-offset-1">
+	  		<p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Address: 301 SE 4th Ave, Gainesville, Fl 32601
+	  		<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+				Phone:(352) 334-3434</p>
+			<p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+				Website: <a href = "https://www.gru.com/">https://www.gru.com/</a></p>
+		</div>
+	</div>
+	 <div class="col-sm-2">
+	 	<h2>
+		 	<a href = "https://www.google.com/maps?q=gru&um=1&ie=UTF-8&sa=X&ved=0ahUKEwic3sDEuNLLAhXGHB4KHVViATIQ_AUICSgD"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+		 	<a href =" https://apps.gru.com/CustomerService/NeedHelp/contactus.jsp"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+		 	<a href = "https://www.gru.com/"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+		</h2>
+	 </div>
+	</div>
+
+	
+	<div class = "row">
+	 <div class = "col-sm-10">
+		<h2>Bank of America</h2>
+  		<div class = "col-sm-offset-1">
+	  		<p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Address: 1116 W University Ave
+	  		<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+				Phone:(352) 335-0411</p>
+			<p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+				Website: <a href = "https://www.bankofamerica.com/">https://www.bankofamerica.com/</a></p>
+		</div>
+	  </div>
+		<div class="col-sm-2">
+		 	<h2>
+			 	<a href = "https://www.google.com/maps/search/bank+of+america/@29.6479665,-82.3570038,13z/data=!3m1!4b1"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span></a>
+			 	<a href ="https://www.bankofamerica.com/accessiblebanking/contactus.go"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></a>
+			 	<a href = "https://www.bankofamerica.com/"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+			</h2>
+		 </div>
+  	</div>
+
+  <div class="row">
+  	<script>
+
+		 // Edit the strings below this line
+		 var startExample = "The Oaks Mall";
+		 var endExample = "401 E. University Ave";
+		 var zip = "32601";
+		 // End edit block
+
+		 // Get and parse the user's current date/time
+		 var date = new Date();
+		 var isPM = false;
+		 var currentTime = date.getHours();
+		 var currentDate = "";
+		 var amOption = '<option value="am">AM';
+		 var pmOption = '<option value="pm">PM';
+
+		 if(currentTime > 11)
+		 isPM = true;
+		 currentTime %= 12;
+		 if(currentTime == 0)
+		 currentTime = 12;
+
+		 currentTime += ':';
+		 if(date.getMinutes() < 10)
+		 currentTime += '0';
+		 currentTime += date.getMinutes();
+
+		 if(isPM)
+		 pmOption = '<option selected="true" value="pm">PM';
+		 else
+		 amOption = '<option selected="true" value="am">AM';
+
+		 if(date.getMonth() < 9)
+		 currentDate = '0';
+		 currentDate += (date.getMonth() + 1) + '/';
+		 if(date.getDate() < 10)
+		 currentDate += '0';
+		 currentDate += date.getDate() + '/' + date.getFullYear();
+
+		 // Builds the destination URL
+		 function buildURL() {
+		 var loc = 'http://www.google.com/maps?ie=UTF8&f=d&';
+
+		 for (var i = 0; (i < document.myForm.length - 1); i++) {
+		 if(document.myForm[i].name == 'ampm')
+		 continue;
+		 if(document.myForm[i].name == 'time')
+		 loc += document.myForm[i].name + '=' + document.myForm[i].value + document.myForm.ampm.value + '&';
+		 else {
+		 if(document.myForm[i].name == 'saddr')
+		 loc += document.myForm[i].name + '=' + document.myForm[i].value + '+near+' + zip + '&';
+		 else
+		 loc += document.myForm[i].name + '=' + document.myForm[i].value + '&';
+		 }
+		 }
+		 loc+='dirflg=r';
+
+		 location.href=loc;
+		 return true;
+		 }
+
+  	</script>
+  </div>
 </section>
     
