@@ -11,7 +11,7 @@
 
   function menuConfig(Menus) {
     Menus.addMenuItem('topbar', {
-      title: 'Essential Lifestyle',
+      title: 'Important Locations',
       state: 'essential',
       roles: ['*']
     });
